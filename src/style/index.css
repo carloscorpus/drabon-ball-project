@@ -1,1 +1,96 @@
 @import 'tailwindcss';
+
+/* Custom Fonts - DBZ */
+@font-face {
+    font-family: 'Saiyan Sans - Left Oblique';
+    src: url('./../assets/fonts/SaiyanSans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saiyan Sans - Right Oblique';
+    src: url('./../assets/fonts/SaiyanSans_1.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saiyan Sans';
+    src: url('./../assets/fonts/SaiyanSans_2.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Custom Fonts - Basic */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../assets/fonts/Roboto-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../assets/fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    /* =================== Fondos =================== */
+    /* Dark */
+    --color-dark: #0e0e12;
+    --color-surface-dark: #1a1a22;
+    --color-elevated-dark: #2c2c3a;
+    /* Light */
+    --color-light: #f0ede6;
+    --color-surface-light: #ffffff;
+    --color-elevated-light: #e8e4dc;
+
+    /* =================== Marca y Acción =================== */
+    --color-primary: #e8650a;
+    --color-primary-hover: #c4500a;
+    /* Dark */
+    --color-accent-dark: #4a9ff5;
+    /* Light */
+    --color-accent-light: #1355b0;
+
+    /* =================== Texto =================== */
+    /* Dark */
+    --color-text-primary-dark: #eeeee8;
+    --color-text-muted-dark: #7a7a88;
+    /* Light */
+    --color-text-primary-light: #1a1a1f;
+    --color-text-muted-light: #6b6870;
+
+    /* =================== Bordes =================== */
+    /* Dark */
+    --color-border-dark: #2c2c3a;
+    /* Light */
+    --color-border-light: #ddd9d0;
+
+    /* =================== Semánticos =================== */
+    --color-success: #22c55e;
+    --color-danger: #ef4444;
+    --color-warning: #f5b800;
+
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-light text-dark dark:bg-dark dark:text-light transition-colors duration-300 font-body;
+    }
+}
+
+@utility container-main {
+    @apply container mx-auto px-2;
+}
