@@ -1,7 +1,7 @@
 import { CardsCharacters } from '../components/CardsCharacters';
 import { useCharacters } from '../hooks/useCharacters';
 
-export const ChareactesPage = () => {
+export const ChareactersPage = () => {
     const { data, isLoading, isError } = useCharacters();
 
     const dataCharacters = data?.data.items || [];
