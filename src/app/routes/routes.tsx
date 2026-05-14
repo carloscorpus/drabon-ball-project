@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router';
 import { Layout } from '@/app/layout/Layout';
-import { ChareactesPage } from '@/features/characters/pages/ChareactesPage';
+import { ChareactersPage } from '@/features/characters/pages/ChareactersPage';
+import { CharacterPage } from '@/features/character/pages/CharacterPage';
 
 export const routes = createBrowserRouter([
     {
@@ -8,7 +9,11 @@ export const routes = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <ChareactesPage />,
+                element: <ChareactersPage />,
+            },
+            {
+                path: 'characters/:id',
+                element: <CharacterPage />,
             },
         ],
     },
