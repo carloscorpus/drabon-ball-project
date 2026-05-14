@@ -4,7 +4,7 @@ import { Moon } from 'lucide-react';
 export const Layout = () => {
     return (
         <main className="container-main">
-            <nav className="flex items-center justify-between text-center border border-light py-2 px-4 rounded-full sticky top-5 my-5 backdrop-blur-xs bg-black/50">
+            <nav className="flex items-center justify-between text-center border border-light py-2 px-4 rounded-full sticky top-5 my-5 backdrop-blur-xs bg-surface-light/50 dark:bg-surface-dark/50 z-999">
                 <a href="/">
                     <figure>
                         <img src={Logo} alt="Logo DBZ" className="object-cover max-w-16" />
