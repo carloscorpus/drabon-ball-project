@@ -72,9 +72,9 @@
 
     /* =================== Bordes =================== */
     /* Dark */
-    --color-border-dark: #2c2c3a;
+    --color-bd-dark: #2c2c3a;
     /* Light */
-    --color-border-light: #ddd9d0;
+    --color-bd-light: #ddd9d0;
 
     /* =================== Semánticos =================== */
     --color-success: #22c55e;
@@ -83,6 +83,7 @@
 
     --font-heading: 'Roboto', sans-serif;
     --font-body: 'Roboto', sans-serif;
+    --font-dbz: 'Saiyan Sans', sans-serif;
 }
 
 @layer base {

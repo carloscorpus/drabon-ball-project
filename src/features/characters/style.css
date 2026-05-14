@@ -1,0 +1,9 @@
+/* Chrome, Edge, Safari */
+progress::-webkit-progress-value {
+    background-color: #e8650a;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: #e8650a;
+}
