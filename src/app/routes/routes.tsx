@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router';
-import { Layout } from '../layout/Layout';
-import { App } from '../App';
+import { Layout } from '@/app/layout/Layout';
+import { ChareactesPage } from '@/features/characters/pages/ChareactesPage';
 
 export const routes = createBrowserRouter([
     {
@@ -8,7 +8,7 @@ export const routes = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <App />,
+                element: <ChareactesPage />,
             },
         ],
     },
