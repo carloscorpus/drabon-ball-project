@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router';
-import Logo from '../assets/images/logo-dbz.webp';
+import Logo from '../../assets/images/logo-dbz.webp';
 import { Moon } from 'lucide-react';
 export const Layout = () => {
     return (
