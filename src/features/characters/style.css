@@ -2,7 +2,9 @@
 progress::-webkit-progress-value {
     background-color: #e8650a;
 }
-
+progress::-webkit-progress-bar {
+    background-color: #e8e4dc;
+}
 /* Firefox */
 progress::-moz-progress-bar {
     background-color: #e8650a;

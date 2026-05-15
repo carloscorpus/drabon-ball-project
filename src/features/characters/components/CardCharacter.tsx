@@ -13,7 +13,7 @@ export const CardCharacter = ({ item }: Props) => {
 
     return (
         <Link to={`/characters/${item.id}`}>
-            <li className="bg-surface-light dark:bg-surface-dark rounded-lg border-2 border-bd-light dark:border-bd-dark p-4 cursor-pointer  hover:backdrop-blur-xs hover:bg-surface-dark/50">
+            <li className="bg-surface-light dark:bg-surface-dark rounded-lg border-2 border-bd-light dark:border-bd-dark p-4 cursor-pointer  hover:backdrop-blur-xs hover:bg-surface-light/50 dark:hover:bg-surface-dark/50 transition duration-300">
                 <figure className="w-full ">
                     <img src={image} alt={name} className="w-full h-full min-h-100 max-h-100 object-contain" />
                 </figure>
