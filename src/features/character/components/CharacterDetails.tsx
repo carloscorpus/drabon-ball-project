@@ -14,7 +14,7 @@ interface Props {
 }
 
 export const CharacterDetails = ({ data }: Props) => {
-    const { image, name, ki, maxKi, race, gender, description, affiliation, transformations } = data || {};
+    const { image, name, ki, maxKi, race, gender, description, affiliation, transformations, originPlanet } = data || {};
 
     const kiValue = parseKi(ki || '');
     const maxKiValue = parseKi(maxKi || '');
@@ -60,6 +60,22 @@ export const CharacterDetails = ({ data }: Props) => {
                         </span>
                     </p>
                     <p>{description}</p>
+
+                    {originPlanet && (
+                        <div className="flex flex-row gap-4 items-start">
+                            <figure>
+                                <img
+                                    src={originPlanet?.image ?? NotFound}
+                                    alt={originPlanet?.name}
+                                    className="w-30 h-30 object-cover rounded-lg"
+                                />
+                            </figure>
+                            <div>
+                                <p>Origin Planet: {originPlanet.name}</p>
+                                <p>Status: {originPlanet.isDestroyed ? 'Destroyed' : 'Active'}</p>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </section>
             <section>
