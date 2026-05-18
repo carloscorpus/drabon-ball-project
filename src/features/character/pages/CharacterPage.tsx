@@ -3,11 +3,15 @@ import { useCharacter } from '../hooks/useCharacter';
 import LoadingImage from '@/assets/images/loading-img.png';
 import LogoImage from '@/assets/images/goku-traste-not-datils.png';
 import { CharacterDetails } from '../components/CharacterDetails';
+import { SingleDetailes } from '../components/SingleDetailes';
+import { Transformations } from '../components/Transformations';
 export const CharacterPage = () => {
     const { id } = useParams();
     const idItem = Number(id);
 
     const { data, isLoading, isError } = useCharacter(idItem);
+
+    const { transformations } = data || {};
 
     if (isLoading) {
         return (
@@ -27,7 +31,10 @@ export const CharacterPage = () => {
 
     return (
         <main>
-            <CharacterDetails data={data} />
+            <CharacterDetails>
+                <SingleDetailes data={data} />
+                <Transformations transformations={transformations} />
+            </CharacterDetails>
         </main>
     );
 };
